@@ -1,0 +1,371 @@
+  
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>;
+    font-style: normal; */
+    margin: 0;
+    background-color: black;
+    overflow: hidden;
+  }
+  .main{
+    display: flex;
+    height: 100vh;
+    padding: 1rem;
+  }
+  .sidebar{
+    background-color:#000000;
+    width: 350px;
+    border-radius: 1rem;
+    
+  }
+  .main-content{
+    background-color:#121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    margin-left: 0.5rem;
+    padding: 0 1.5rem 0 1.5rem;
+    
+  }
+  .music-player{
+    background-color:black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    
+  }
+  i{
+    color: white;
+  }
+  a{
+    text-decoration: none;
+    align-items: center;
+    color: white;
+  }
+  .nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+  }
+.nav-option{
+  line-height: 1.5rem;
+  opacity: 0.75;
+  padding: 0.5rem 0.75rem;
+}
+.nav-option:hover{
+  line-height: 1.5rem;
+  opacity: 1;
+}
+.nav-option i{
+  font-size: 1.2rem;
+  
+}
+.nav-option a{
+  font-size: 1rem;
+  
+}
+.library{
+  background-color: #121212;
+  border-radius: 1rem;
+  height: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem 0.75rem;
+  /* overflow: scroll; */
+}
+.option{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lib-option img{
+  height: 1.35rem;
+  width: 1.35rem;
+}
+.lib-option a{
+  font-size: 1rem;
+}
+.icons{
+  display: flex;
+  font-size: 1.2rem;
+}
+.icons i{
+  opacity: 0.55;
+  margin-right: 1rem;
+}
+.icons i:hover{
+  opacity: 1;
+}
+.box-p1{
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.box-p2{
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.box{
+  background-color: #232323;
+  height: 8.2rem;
+  /* margin: 0.5rem; */
+  margin-top: 1rem;
+  padding: 1rem 2.5rem;
+  border-radius: 1rem;
+  line-height: 2rem;
+}
+.badge{
+  border: none;
+  border-radius: 1rem;
+  color: #000000;
+  background-color: white;
+  padding: 0.46rem 0.46rem;
+  margin-top: 1rem;
+  height: 2.2rem;
+  font-weight: 700;
+  width: fit-content;
+}
+
+.box-2{
+  background-color: #232323;
+  height: 8.2;
+  margin-top: 0.8rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  line-height: 1.5rem;
+}
+.box-p3{
+  color: white;
+  font-weight: 700;
+  font-size:1rem;
+}
+.box-p4{
+  color: white;
+  font-weight: 400;
+  font-size:0.85 rem;
+}
+.badge2{
+  border: none;
+  border-radius: 1rem;
+  background-color: white;
+  margin-top: 1rem;
+  padding: 0.40rem 0.45rem;
+  font-weight: 700;
+  height: 2.2rem;
+}
+.sticy-nav{
+  position: sticky;
+  top: 0;
+  background-color:#121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0;
+  z-index: 10;
+}
+.sticy-nav-img{
+  margin: 1rem; 
+}
+.sticy-nav-badge{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sticy-nav .stic-item{
+  margin-right: 1rem ;
+}
+.badge-d{
+  background-color: #000000;
+  color: white;
+}
+.badge-d i{
+  color: white;
+}
+@media (max-width:1000px){
+  .hide{
+    display: none;
+  }
+}
+.album-container{
+  color: white;
+}
+
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card{
+  background-color: #232323;
+  width: 150px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin:1rem ;
+  margin-top: 1rem;
+}
+.card-img{
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.card-title{
+  font-weight: 700;
+}
+.card-info{
+  font-size: small;
+}
+.foter{
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line{
+  width: 90%;
+  height: 50%;
+  border-top:1px solid white;
+  opacity: 0.7;
+}
+.music-player{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.music-alb{
+  width: 25%;
+}
+.music-control{
+  width: 50%;
+}
+.music-i{
+  width: 25%;
+}
+.play-control{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1rem;
+}
+.player-icon{
+  height: 1rem;
+  margin-right: 2rem;
+  opacity: 0.7;
+}
+.player-icon:hover{
+  opacity: 1 ;
+}
+.progress-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:0.1rem;
+}
+.progress-range{
+  width: 70%;
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+  
+}
+.progress-range::-webkit-slider-runnable-track{
+  background-color: #ddd;
+  border-radius: 100px;
+  height: 0.2rem;
+  margin-top: 10px;
+ 
+}
+span{
+  color: white;
+  margin-top: 10px;
+
+}
+.progress-range::-webkit-slider-thumb{
+  height: 16px;
+  width: 16px;
+  appearance: none;
+  background-color: rgb(22, 134, 22);
+  border-radius: 50%;
+  margin-top: -6px;
+}
+
+.music-alb{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.music-alb h2{
+  margin-top: 1.5rem;
+  color: white;
+  font-size: medium;
+}
+.music-alb p{
+    color: white;
+    font-size: small;
+    margin-bottom: 1.5rem;
+}
+.music-alb-img{
+  height: 2rem;
+  margin-left: 2rem;
+  opacity: 0.7;
+}
+.music-alb-img:hover{
+  opacity: 1;
+  font-weight: 700;
+  color: red;
+  
+}
+.music-alb-img2{
+  height: 3rem;
+  margin-right: 2rem;
+  opacity: 0.5;
+}
+.music-alb-img2:hover{
+  opacity: 1;
+  font-weight: 700px;
+  height: 3rem;
+}
+.music-i{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.icon-music{
+    height: 1.5rem;
+}
+.icon-music-play{
+  height: 3rem;
+}
+.icon-music-mic{
+  height: 3rem;
+}
+.icon-music-valum{
+  height: 3rem;
+  margin-left: 5px;
+}
+.valume{
+  appearance: none ;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right:40px ;
+  margin-left: 10px;
+}
+.valume::-webkit-slider-runnable-track{
+  background-color: #ddd;
+  border-radius: 5rem;
+  height: 0.25rem;
+}
+.valume::-webkit-slider-thumb{
+  appearance: none;
+  background-color: orangered;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  margin-top: -3px;
+}
